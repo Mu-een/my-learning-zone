@@ -8,8 +8,8 @@
           This is a self-improvement course focused on helping you identify and harness your unique abilities to achieve 
           personal and professional success. 
         </p>
-        <p>You will learn how to uncover your strengths, explore the benefits of this self-awareness,
-          and gain practical insights on leveraging your strengths to enhance performance, confidence, and engagement. 
+        <p>You will learn how to uncover your strengths, explore the benefits of this self-awareness.
+          Gain practical insights on leveraging your strengths to enhance performance, confidence, and engagement. 
           The course empowers yourself to embrace your strengths and use them effectively in various aspects of life.</p>
         <p>
           This course is intended for employees as well as contractors. The estimated duration of the course is 1 hour.
@@ -35,25 +35,29 @@
         <li>Personal growth</li>
       </ul>
       <p>
-        The learning outcomes will aim to equip you with the knowledge and skills to understand, appreciate, and leverage your strengths,
+        The learning outcomes will aim to equip you with the knowledge and skills to understand, appreciate, and grasp your strengths,
          leading to greater personal fulfillment, career success, and positive impact on your surroundings.
       </p>
     </div>
-    <CourseDetails />
+    <CourseDetails/>
+    <img src="../assets/vWBmqIzRwJxFAjFA_CM-SS-01.jpg" alt="course-img" class="course-image">
     <UserDataForm/>
   </div>
+  <FooterC/>
 </template>
 
 <script>
 import BannerC from '@/components/BannerC.vue';
 import CourseDetails from '@/components/CourseDetails.vue';
 import UserDataForm from '@/components/UserDataForm.vue';
+import FooterC from '@/components/FooterC.vue';
 export default {
   name: 'HomeView',
   components: {
     BannerC,
     CourseDetails,
-    UserDataForm
+    UserDataForm,
+    FooterC
   },
   mounted() {
     const bannerComponent = document.getElementById('banner-component');
@@ -144,7 +148,6 @@ p {
   text-align: left;
   font-family: 'Outfit', sans-serif;
   font-size: 17px;
-
 }  
 
 .banner {
@@ -158,4 +161,14 @@ p {
 .banner {
   transition: transform 0.3s ease;
 }
+
+.course-image {
+  width: 100%;
+  max-width: 800px; 
+  display: block; 
+  margin: 0 auto; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
 </style>

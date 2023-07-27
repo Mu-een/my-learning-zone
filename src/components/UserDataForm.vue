@@ -1,4 +1,8 @@
 <template>
+  <div class="heading">
+    <h2>Data Capture Form: User Information</h2>
+    <p>Please take a moment to fill in the form below. Your input is valuable to us!</p>
+  </div>
   <div>
     <form class="user-form" action="https://formspree.io/f/mrgwbwag" method="post">
       <div class="form-group">
@@ -59,7 +63,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 /* Basic styles for the form */
 .user-form {
-  width: 300px;
+  width: 500px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #000;
@@ -105,5 +109,17 @@ input {
   background-color: #82BB26;
   color: #fff;
   scale: 1.1;
+}
+
+.heading {
+  font-family: 'Zilla Slab', serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.heading p{
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+
 }
 </style>
