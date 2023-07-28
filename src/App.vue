@@ -1,6 +1,9 @@
 <template>
   <nav>
-    <router-link to="/" class="display-5">Home</router-link>
+    <img src="../src/assets/Vivo_Energy-Logo.wine.png" alt="logo" class="logo">
+    <div class="home-link">
+      <router-link to="/">Home</router-link>
+    </div>
   </nav>
   <router-view/>
 </template>
@@ -18,7 +21,10 @@
 
 nav {
   padding: 30px;
-
+  font-size: 25px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav a {
@@ -36,5 +42,15 @@ nav a:hover {
   background-color: #000;
   border-radius: 20px;
   color: #fff;
+}
+
+.logo {
+  width: 150px; 
+  height: auto; 
+  display: inline-block; 
+}
+
+.home-link {
+  margin-right: 20px;
 }
 </style>
